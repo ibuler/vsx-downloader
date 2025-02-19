@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "VSCode Extension Downloader",
+  "version": "1.0",
+  "description": "在 VS Code Marketplace 详情页添加 VSIX 下载按钮",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://marketplace.visualstudio.com/items*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
